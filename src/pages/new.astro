@@ -1,0 +1,32 @@
+---
+import Layout from "../layouts/Layout.astro";
+import newArray from "../db/new.json";
+import CardNew from "../components/CardNew.astro";
+---
+
+<Layout
+    title="Nuevos productos | semanales"
+    description="En esta sección encontrarás los nuevos productos que se agreguen durante la semana"
+>
+    <main class="flex justify-center items-center h-[1024px]">
+        <div class="flex flex-col justify-between items-center w-[1024px] pb-20">
+            <h2 class=" text-[#BCA2F2] text-2xl">Agregados recientes</h2>
+            <p class="text-2xl text-[#18181B] text-center mt-4 w-[559px]">
+                En esta sección se mostrarán los productos agregados
+                recientemente por semana.
+            </p>
+            <div class="grid grid-cols-3 gap-7 mt-14">
+                {
+                    newArray.map((item) => (
+                        <CardNew
+                            title={item.title}
+                            price={item.price}
+                            star={item.star}
+                            img={item.img}
+                        />
+                    ))
+                }
+            </div>
+        </div>
+    </main>
+</Layout>
