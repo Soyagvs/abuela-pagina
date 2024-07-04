@@ -6,18 +6,22 @@ import Layout from "../layouts/Layout.astro";
     title="Sobre mi | ATETA"
     description="En esta seccion te hablo sobre mi, la vendedora de estos productos de calidad y a buen precio."
 >
-    <main class="flex flex-row justify-center items-center h-[1024px]">
-        <div class="w-[1024px] flex flex-col justify-center items-center">
-            <h2 class=" text-[#BCA2F2] text-2xl">Sobre mi</h2>
+    <main
+        class="flex flex-row justify-center items-center xs:h-[844px] w-[390px]"
+    >
+        <div class="flex flex-col justify-center items-center -mt-20">
+            <h2 class="text-[#BCA2F2] text-2xl">Sobre mi</h2>
             <video
                 src="/video/cover.mp4"
                 autoplay
                 loop
                 muted
-                class="w-[1000px] rounded-xl mt-4"
+                class="w-auto rounded-xl mt-4"
             >
             </video>
-            <div class="text-2xl text-[#18181B] text-center flex flex-col gap-5 mt-20">
+            <div
+                class="text-2xl text-[#18181B] text-start flex flex-col justify-center items-center gap-5 mt-10"
+            >
                 <p>
                     Nuestra tienda es un tesoro de cosméticos de calidad,
                     cuidadosamente seleccionados.

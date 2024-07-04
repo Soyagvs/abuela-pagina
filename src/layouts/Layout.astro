@@ -1,5 +1,5 @@
 ---
-import Navbar from "../components/Navbar.astro";
+import {Navbar} from "../components/Navbar.jsx"
 import Footer from "../components/Footer.astro";
 import { ViewTransitions } from "astro:transitions";
 
@@ -12,7 +12,7 @@ const { title, description } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="mx-5">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content={description} />
@@ -22,8 +22,8 @@ const { title, description } = Astro.props;
 		<title>{title}</title>
 		<ViewTransitions />
 	</head>
-	<body>
-		<Navbar />
+	<body class="flex flex-col justify-center items-center">
+		<Navbar client:visible/>
 		<slot />
 		<Footer />
 	</body>
