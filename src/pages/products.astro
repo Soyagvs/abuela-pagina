@@ -1,0 +1,31 @@
+---
+import Layout from "../layouts/Layout.astro";
+import products from "../db/products.json";
+import CardProducts from "../components/CardProducts.astro";
+---
+
+<Layout
+    title="Mis productos | ATETA"
+    description="En esta sección encontrarás todos los productos que se agreguen incluso los nuevos que se agregan durante la semana"
+>
+    <main class="flex justify-center items-center mb-20 mt-20">
+        <div
+            class="flex flex-col justify-between items-center w-[1024px]"
+        >
+            <h2 class="text-[#BCA2F2] text-2xl">Mis productos</h2>
+            
+            <div class="grid grid-cols-3 gap-7 mt-14">
+                {
+                    products.map((item) => (
+                        <CardProducts
+                            title={item.title}
+                            price={item.price}
+                            star={item.star}
+                            img={item.img}
+                        />
+                    ))
+                }
+            </div>
+        </div>
+    </main>
+</Layout>
