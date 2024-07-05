@@ -4,20 +4,22 @@ interface Props {
     price: number;
     star: number;
     img: number;
+    id: number
 }
-const { title, price, star, img } = Astro.props;
+const { title, price, star, img, id } = Astro.props;
 ---
 
 <div
     class="border-2 border-yellow-300 rounded-xl p-5 flex flex-col gap-1 shadow-md shadow-gray-600"
->
-    <div class="flex flex-col">
+    >
+    <div class="flex flex-col items-end">
+        <span class="text-white bg-black rounded-full w-10 h-10 flex text-center justify-center items-center">{id}</span>
         <img
-            src={`/img/new/new-${img}.png`}
-            alt="Image for example"
-            class="w-60 h-60 rounded-xl"
-            decoding="async"
-            loading="lazy"
+        src={`/img/new/new-${img}.png`}
+        alt="Image for example"
+        class="w-60 h-60 rounded-xl"
+        decoding="async"
+        loading="lazy"
         />
     </div>
     <div class="flex flex-col gap-1">

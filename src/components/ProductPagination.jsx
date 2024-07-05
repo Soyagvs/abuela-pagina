@@ -33,7 +33,9 @@ const ProductPagination = ({ products }) => {
                 {currentProducts.map((item, index) => (
                     <div key={index}
                         className="border rounded-xl p-5 flex flex-col gap-1 shadow-md shadow-gray-600">
-                        <div className="flex flex-col">
+                        <div className="flex flex-col items-end">
+                            <span class="text-white bg-black rounded-full w-10 h-10 flex text-center justify-center items-center">{item.id}</span>
+
                             <img
                                 src={`/img/products/products-${item.img}.png`}
                                 alt={`Product ${item.title}`}
