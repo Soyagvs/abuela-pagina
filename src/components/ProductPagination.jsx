@@ -29,7 +29,7 @@ const ProductPagination = ({ products }) => {
 
     return (
         <div>
-            <div className="grid grid-cols-1 mt-10 justify-center items-center gap-5">
+            <div className="grid grid-cols-1 lg:grid-cols-3 mt-10 justify-center items-center gap-5">
                 {currentProducts.map((item, index) => (
                     <div key={index}
                         className="border rounded-xl p-5 flex flex-col gap-1 shadow-md shadow-gray-600">
