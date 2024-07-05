@@ -52,6 +52,17 @@ const ProductPagination = ({ products }) => {
                                 src={`/img/star/star-${item.star}.png`}
                             />
                         </div>
+                        <div className="flex justify-center items-center mt-2">
+                            <a
+                                className="bg-yellow-300 w-32 h-10 rounded-lg flex justify-center items-center gap-2"
+                                href="https://wa.me/5491138192126?text=Hola%20quiero%20comprar%20un%20producto%20🛒"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img src="/img/wsp-logo.webp" alt="logo message." class="w-5" />
+                                <p className="text-xs">Comprar</p>
+                            </a>
+                        </div>
                     </div>
                 ))}
             </div>
