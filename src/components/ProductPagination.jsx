@@ -35,7 +35,7 @@ const ProductPagination = ({ products }) => {
                         className="border rounded-xl p-5 flex flex-col gap-1 shadow-md shadow-gray-600">
                         <div className="flex flex-col">
                             <img
-                                src={`src/assets/img/products/products-${item.img}.png`}
+                                src={`/img/products/products-${item.img}.png`}
                                 alt={`Product ${item.title}`}
                                 className="w-60 h-60 rounded-xl"
                                 decoding="async"
@@ -49,7 +49,7 @@ const ProductPagination = ({ products }) => {
                             <p className="text-blue-500 font-semibold"># Estado</p>
                             <img
                                 className="w-auto"
-                                src={`/src/assets/img/star/star-${item.star}.png`}
+                                src={`/img/star/star-${item.star}.png`}
                             />
                         </div>
                     </div>
