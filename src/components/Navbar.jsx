@@ -25,9 +25,9 @@ export const Navbar = () => {
     return (
         <header className="flex justify-center items-center ">
             <nav
-                className="flex flex-col justify-center items-center mt-12 "
+                className="flex flex-col justify-center items-center mt-16 "
             >
-                <p className="font-bold text-4xl">ATETA</p>
+                <p className="font-bold text-4xl md:hidden">ATETA</p>
                 <div className="md:hidden flex items-center">
                     <button id="menu-toggle" className="text-gray-500 focus:outline-none">
                         <svg
@@ -47,7 +47,7 @@ export const Navbar = () => {
                 </div>
                 <div
                     id="menu"
-                    className="hidden md:flex md:justify-around md:items-center md:gap-20 lg:gap-40"
+                    className="hidden md:flex md:justify-around md:items-center md:gap-20 lg:gap-36"
                 >
                     <div className="hidden md:flex md:justify-center md:items-center">
                         <svg
