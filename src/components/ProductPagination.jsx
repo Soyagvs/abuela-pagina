@@ -55,7 +55,7 @@ const ProductPagination = ({ products }) => {
                         <div className="flex justify-center items-center mt-2">
                             <a
                                 className="bg-yellow-300 w-32 h-10 rounded-lg flex justify-center items-center gap-2"
-                                href="https://wa.me/5491138192126?text=Hola%20quiero%20comprar%20un%20producto%20🛒"
+                                href="https://wa.me/5491124613382?text=Hola%20quiero%20comprar%20un%20producto%20🛒"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
