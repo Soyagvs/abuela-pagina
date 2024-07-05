@@ -6,41 +6,47 @@ import Layout from "../layouts/Layout.astro";
 	title="Bienvenidos a ATETA | la pagina web de cosmeticos"
 	description="En esta web encontraras productos de buena calidad y al mejor precio , aun mejor que del propio mercado"
 >
-	<main class="flex justify-center items-center lg:h-[930px] xs:h-[844px] w-[390px]">
+	<main
+		class="flex justify-center items-center lg:h-[900px] xs:h-[844px] w-[390px] xl:w-[1024px]"
+	>
 		<div class="flex justify-center items-center">
-			<div class="flex flex-col">
+			<div
+				class="flex flex-col lg:flex-row lg:justify-center lg:items-center lg:-mt-10 lg:gap-52 lg:w-[200px]"
+			>
 				<div
-				class="flex flex-col gap-5 justify-center items-center z-20 mb-96"
+					class="flex flex-col gap-5 justify-center items-center lg:items-start z-20 mb-96 lg:m-0 lg:w-80 "
 				>
-				<h1 class="text-black font-bold text-5xl">
-					Bienvenidos !
-				</h1>
-				<p class="text-[#18181B] text-lg xs:w-[350px] text-center">
-					En este sitio encontraras productos domesticos sin usar
-					a un mejor precio del mercado, elije lo que te gusta y
-					haz click para estar aun mas cerca de obtenerlo.
-				</p>
-				
-				<div class="flex flex-col-reverse justify-center items-center gap-3">
-					<a
-					href="/new"
-					class="w-24 h-11 bg-[#F2A663] text-black text-base rounded-lg flex flex-row items-center justify-center"
-					>Nuevo !</a
+					<h1 class="text-black font-bold text-5xl lg:text-6xl lg:w-96">Bienvenidos !</h1>
+					<p class="text-[#18181B] text-lg xs:w-[350px] text-center lg:text-xl lg:text-start">
+						En este sitio encontraras productos domesticos sin usar
+						a un mejor precio del mercado, elije lo que te gusta y
+						haz click para estar aun mas cerca de obtenerlo.
+					</p>
+
+					<div
+						class="flex flex-col-reverse justify-center items-center gap-3 lg:flex-row"
 					>
-					<a
-					href="/products"
-					class="h-11 w-48 bg-[#BCA2F2] text-white text-base rounded-lg flex flex-row items-center justify-center"
-					>Ver productos</a
+						<a
+							href="/new"
+							class="w-24 h-11 bg-[#F2A663] text-black text-base rounded-lg flex flex-row items-center justify-center"
+							>Nuevo !</a
+						>
+						<a
+							href="/products"
+							class="h-11 w-48 bg-[#BCA2F2] text-white text-base rounded-lg flex flex-row items-center justify-center"
+							>Ver productos</a
 						>
 					</div>
 				</div>
-				<div class=" absolute z-10 mt-80 flex justify-center items-center">
+				<div
+					class="max-lg:absolute z-10 max-lg:mt-80 lg:mt-0 flex justify-center items-center"
+				>
 					<img
 						src="/img/img-home.png"
 						alt="Image to home"
 						decoding="async"
 						loading="lazy"
-						class="lg:max-w-[638px] lg:max-h-[713px] w-96 "
+						class="lg:max-w-[638px] lg:max-h-[713px] w-96 lg:w-[450px]"
 					/>
 				</div>
 			</div>
