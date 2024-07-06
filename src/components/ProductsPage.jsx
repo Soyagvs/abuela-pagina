@@ -1,4 +1,3 @@
-/** @jsxImportSource preact */
 import { useState } from 'preact/hooks';
 import ProductPagination from '../components/ProductPagination';
 import ButtonFilter from '../components/ButtonFilter';
