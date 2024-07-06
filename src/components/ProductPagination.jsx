@@ -30,12 +30,12 @@ const ProductPagination = ({ products }) => {
 
     return (
         <div>
-            <div className="grid grid-cols-1 lg:grid-cols-3 mt-10 justify-center items-center gap-5">
+            <div className="grid grid-cols-1 lg:grid-cols-3 mt-10 justify-center items-center lg:gap-10 xs:gap-5">
                 {currentProducts.map((item, index) => (
                     <div key={index}
                         className="border rounded-xl p-5 flex flex-col gap-1 shadow-md shadow-gray-600">
                         <div className="flex flex-col items-end">
-                            <span className="text-white bg-[#BCA2F2] rounded-full w-9 h-9 flex text-center justify-center items-center absolute">{item.id}</span>
+                            <span className="text-white bg-[#BCA2F2] rounded-full w-9 h-9 flex text-center justify-center items-center absolute -mt-3 -mr-3">{item.id}</span>
                             <img
                                 src={`/img/products/products-${item.img}.webp`}
                                 alt={`Product ${item.title}`}
