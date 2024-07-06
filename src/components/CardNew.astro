@@ -16,7 +16,7 @@ const { title, price, star, img, id, subtitle, stock } = Astro.props;
 >
     <div class="flex flex-col items-end">
         <span
-            class="text-white bg-black rounded-full w-9 h-9 absolute flex text-center justify-center items-center"
+            class="text-white bg-[#BCA2F2] rounded-full w-9 h-9 absolute flex text-center justify-center items-center"
             >{id}</span
         >
         <img
@@ -40,7 +40,7 @@ const { title, price, star, img, id, subtitle, stock } = Astro.props;
             class="w-auto"
         />
     </div>
-    <div class="flex justify-center items-center">
+    <div class="flex justify-center items-center mt-3">
         <!-- Utilizando operador ternario para la condición -->
         {
             stock ? (

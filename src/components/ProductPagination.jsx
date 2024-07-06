@@ -35,11 +35,11 @@ const ProductPagination = ({ products }) => {
                     <div key={index}
                         className="border rounded-xl p-5 flex flex-col gap-1 shadow-md shadow-gray-600">
                         <div className="flex flex-col items-end">
-                            <span className="text-white bg-black rounded-full w-9 h-9 flex text-center justify-center items-center absolute">{item.id}</span>
+                            <span className="text-white bg-[#BCA2F2] rounded-full w-9 h-9 flex text-center justify-center items-center absolute">{item.id}</span>
                             <img
                                 src={`/img/products/products-${item.img}.webp`}
                                 alt={`Product ${item.title}`}
-                                className="w-60 h-60 rounded-xl"
+                                className="w-[200px] rounded-xl"
                                 decoding="async"
                                 loading="lazy" />
                         </div>
