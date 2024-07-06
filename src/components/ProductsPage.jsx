@@ -19,6 +19,7 @@ const ProductsPage = () => {
             <div className="flex flex-col justify-center items-center">
                 <h2 className="text-[#BCA2F2] text-2xl">Mis productos</h2>
                 <ButtonFilter onFilterChange={handleFilterChange} />
+                <p className="text-gray-400 text-center">Puedes aplicar filtros de busquedas a las paginas</p>
                 <ProductPagination products={filteredProducts} />
             </div>
         </div>
