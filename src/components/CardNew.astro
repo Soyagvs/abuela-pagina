@@ -36,7 +36,7 @@ const { title, price, star, img, id, subtitle, stock } = Astro.props;
         <p class="text-blue-500 font-semibold"># Estado</p>
         <img
             src={`/img/star/star-${star}.png`}
-            alt="Star to products"
+            alt="Star to products "
             class="w-auto"
         />
     </div>
@@ -49,6 +49,7 @@ const { title, price, star, img, id, subtitle, stock } = Astro.props;
                     href={`https://wa.me/5491124613382?text=Hola%20quiero%20comprar%20el%20producto%20${id}%20🛒`}
                     target="_blank"
                     rel="noopener noreferrer"
+                    
                 >
                     <img
                         src="/img/wsp-logo.webp"

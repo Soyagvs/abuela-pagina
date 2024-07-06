@@ -53,6 +53,7 @@ const ProductPagination = ({ products }) => {
                             <img
                                 className="w-auto"
                                 src={`/img/star/star-${item.star}.png`}
+                                alt="Image to star"
                             />
                         </div>
                         <div className="flex justify-center items-center mt-2">
