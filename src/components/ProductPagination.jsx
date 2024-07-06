@@ -34,7 +34,7 @@ const ProductPagination = ({ products }) => {
                     <div key={index}
                         className="border rounded-xl p-5 flex flex-col gap-1 shadow-md shadow-gray-600">
                         <div className="flex flex-col items-end">
-                            <span class="text-white bg-black rounded-full w-10 h-10 flex text-center justify-center items-center">{item.id}</span>
+                            <span class="text-white bg-black rounded-full w-9 h-9 flex text-center justify-center items-center absolute">{item.id}</span>
 
                             <img
                                 src={`/img/products/products-${item.img}.webp`}
@@ -43,8 +43,8 @@ const ProductPagination = ({ products }) => {
                                 decoding="async"
                                 loading="lazy" />
                         </div>
-                        <div className="flex flex-col gap-1">
-                            <h3 className="font-bold">{item.title}</h3>
+                        <div className="flex flex-col mt-3">
+                            <h3 className="font-bold text-2xl">{item.title}</h3>
                             <p>{item.subtitle}</p>
                             <p className="font-semibold">{`$ ${item.price}`}</p>
                         </div>
@@ -56,7 +56,8 @@ const ProductPagination = ({ products }) => {
                             />
                         </div>
                         <div className="flex justify-center items-center mt-2">
-                            <a
+                           { item.stock ?
+                           <a
                                 className="bg-yellow-300 w-32 h-10 rounded-lg flex justify-center items-center gap-2"
                                 href={`https://wa.me/5491124613382?text=Hola%20quiero%20comprar%20el%20producto%20${item.id}%20🛒`}
                                 target="_blank"
@@ -64,7 +65,7 @@ const ProductPagination = ({ products }) => {
                             >
                                 <img src="/img/wsp-logo.webp" alt="logo message." class="w-5" />
                                 <p className="text-xs">Comprar</p>
-                            </a>
+                                </a> : <a className="bg-red-500 w-32 h-10 rounded-lg flex justify-center items-center gap-2">Sin stock</a>}
                         </div>
                     </div>
                 ))}
