@@ -76,7 +76,7 @@ export const Navbar = () => {
                     >
                     <a
                         href="/products"
-                        className="block md:inline-block bg-[#BCA2F2] text-white rounded-lg py-2 px-4 mt-4 md:mt-0 md:ml-4"
+                        className="block md:inline-block bg-[#BCA2F2] text-black rounded-lg py-2 px-4 mt-4 md:mt-0 md:ml-4"
                     >Ver productos</a
                     >
                 </div>
