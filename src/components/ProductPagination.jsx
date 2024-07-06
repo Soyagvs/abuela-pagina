@@ -1,4 +1,4 @@
-import { useState } from 'preact/hooks';
+import { useState, useEffect } from 'preact/hooks';
 import "../styles/ProductPagination.css";
 
 const ProductPagination = ({ products }) => {
@@ -23,6 +23,11 @@ const ProductPagination = ({ products }) => {
         }
     };
 
+    // Scroll to top on page change
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, [currentPage]);
+
     return (
         <div>
             <div className="grid grid-cols-1 lg:grid-cols-3 mt-10 justify-center items-center gap-5">
@@ -30,7 +35,7 @@ const ProductPagination = ({ products }) => {
                     <div key={index}
                         className="border rounded-xl p-5 flex flex-col gap-1 shadow-md shadow-gray-600">
                         <div className="flex flex-col items-end">
-                            <span class="text-white bg-black rounded-full w-9 h-9 flex text-center justify-center items-center absolute">{item.id}</span>
+                            <span className="text-white bg-black rounded-full w-9 h-9 flex text-center justify-center items-center absolute">{item.id}</span>
                             <img
                                 src={`/img/products/products-${item.img}.webp`}
                                 alt={`Product ${item.title}`}
@@ -58,7 +63,7 @@ const ProductPagination = ({ products }) => {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-                                    <img src="/img/wsp-logo.webp" alt="logo message." class="w-5" />
+                                    <img src="/img/wsp-logo.webp" alt="logo message." className="w-5" />
                                     <p className="text-xs">Comprar</p>
                                 </a> :
                                 <a className="bg-red-500 w-32 h-10 rounded-lg flex justify-center items-center gap-2">Sin stock</a>
