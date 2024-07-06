@@ -6,8 +6,9 @@ interface Props {
     img: number;
     id: number;
     subtitle: string;
+    stock: boolean;
 }
-const { title, price, star, img, id, subtitle } = Astro.props;
+const { title, price, star, img, id, subtitle, stock } = Astro.props;
 ---
 
 <div
@@ -19,7 +20,7 @@ const { title, price, star, img, id, subtitle } = Astro.props;
             >{id}</span
         >
         <img
-            src={`/img/new/new-${img}.png`}
+            src={`/img/new/new-${img}.webp`}
             alt="Image for example"
             class="w-60 h-60 rounded-xl"
             decoding="async"
@@ -28,9 +29,7 @@ const { title, price, star, img, id, subtitle } = Astro.props;
     </div>
     <div class="flex flex-col mt-3">
         <h3 class="font-bold text-2xl">{title}</h3>
-        <p>
-            {subtitle}
-        </p>
+        <p>{subtitle}</p>
         <p class="font-semibold">{`$ ${price}`}</p>
     </div>
     <div class="flex justify-start items-center">
@@ -42,14 +41,27 @@ const { title, price, star, img, id, subtitle } = Astro.props;
         />
     </div>
     <div class="flex justify-center items-center">
-        <a
-            class="bg-yellow-300 w-32 h-10 rounded-lg flex justify-center items-center gap-2"
-            href={`https://wa.me/5491124613382?text=Hola%20quiero%20comprar%20el%20producto%20${id}%20🛒`}
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            <img src="/img/wsp-logo.webp" alt="logo message." class="w-5" />
-            <p class="text-xs">Comprar</p>
-        </a>
+        <!-- Utilizando operador ternario para la condición -->
+        {
+            stock ? (
+                <a
+                    class="bg-yellow-300 w-32 h-10 rounded-lg flex justify-center items-center gap-2"
+                    href={`https://wa.me/5491124613382?text=Hola%20quiero%20comprar%20el%20producto%20${id}%20🛒`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img
+                        src="/img/wsp-logo.webp"
+                        alt="logo message."
+                        class="w-5"
+                    />
+                    <p class="text-xs">Comprar</p>
+                </a>
+            ) : (
+                <a class="bg-red-500 w-32 h-10 rounded-lg flex justify-center items-center gap-2">
+                    Sin stock
+                </a>
+            )
+        }
     </div>
 </div>

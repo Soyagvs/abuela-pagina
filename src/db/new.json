@@ -1,26 +1,29 @@
 [
     {
         "id":1,
-        "title":"TITLE",
-        "subtitle":"",
-        "img":1,
-        "price":1,
-        "star":1
+        "title": "VIOLETTA",
+        "subtitle": "Deocolonia",
+        "img": 17,
+        "price": 3000,
+        "star": 5,
+        "stock": true
     },
     {
         "id": 2,
-        "title": "TITLE",
-        "subtitle":"",
-        "img": 1,
-        "price": 1,
-        "star":1
+        "title": "AMODIL",
+        "subtitle": "Desodorante aerosol",
+        "img": 19,
+        "price": 3500,
+        "star": 5,
+        "stock": true
     },
     {
         "id": 3,
-        "title": "TITLE",
-        "subtitle":"",
-        "img": 1,
-        "price": 1,
-        "star": 1
+        "title": "GIGOT",
+        "subtitle": "Perfume",
+        "img": 24,
+        "price": 8000,
+        "star": 5,
+        "stock": true
     }
 ]

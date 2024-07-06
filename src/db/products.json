@@ -177,7 +177,7 @@
         "img": 20,
         "price": 3500,
         "star": 5,
-        "stock":true
+        "stock":true 
     },
     {
         "id": 21,
