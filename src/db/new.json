@@ -2,6 +2,7 @@
     {
         "id":1,
         "title":"TITLE",
+        "subtitle":"",
         "img":1,
         "price":1,
         "star":1
@@ -9,6 +10,7 @@
     {
         "id": 2,
         "title": "TITLE",
+        "subtitle":"",
         "img": 1,
         "price": 1,
         "star":1
@@ -16,6 +18,7 @@
     {
         "id": 3,
         "title": "TITLE",
+        "subtitle":"",
         "img": 1,
         "price": 1,
         "star": 1

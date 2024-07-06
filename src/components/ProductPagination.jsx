@@ -37,14 +37,15 @@ const ProductPagination = ({ products }) => {
                             <span class="text-white bg-black rounded-full w-10 h-10 flex text-center justify-center items-center">{item.id}</span>
 
                             <img
-                                src={`/img/products/products-${item.img}.png`}
+                                src={`/img/products/products-${item.img}.webp`}
                                 alt={`Product ${item.title}`}
                                 className="w-60 h-60 rounded-xl"
                                 decoding="async"
                                 loading="lazy" />
                         </div>
                         <div className="flex flex-col gap-1">
-                            <h3>{item.title}</h3>
+                            <h3 className="font-bold">{item.title}</h3>
+                            <p>{item.subtitle}</p>
                             <p className="font-semibold">{`$ ${item.price}`}</p>
                         </div>
                         <div className="flex justify-start items-center">
