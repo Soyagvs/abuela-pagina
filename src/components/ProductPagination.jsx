@@ -1,26 +1,23 @@
-import "../styles/ProductPagination.css"
+/** @jsxImportSource preact */
 import { useState } from 'preact/hooks';
+import "../styles/ProductPagination.css";
 
 const ProductPagination = ({ products }) => {
     const [currentPage, setCurrentPage] = useState(1);
     const productsPerPage = 6;
 
-    // Calcular el número total de páginas
     const totalPages = Math.ceil(products.length / productsPerPage);
 
-    // Calcular los productos a mostrar en la página actual
     const indexOfLastProduct = currentPage * productsPerPage;
     const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
     const currentProducts = products.slice(indexOfFirstProduct, indexOfLastProduct);
 
-    // Manejar el cambio de página hacia adelante
     const nextPage = () => {
         if (currentPage < totalPages) {
             setCurrentPage(currentPage + 1);
         }
     };
 
-    // Manejar el cambio de página hacia atrás
     const prevPage = () => {
         if (currentPage > 1) {
             setCurrentPage(currentPage - 1);
@@ -35,7 +32,6 @@ const ProductPagination = ({ products }) => {
                         className="border rounded-xl p-5 flex flex-col gap-1 shadow-md shadow-gray-600">
                         <div className="flex flex-col items-end">
                             <span class="text-white bg-black rounded-full w-9 h-9 flex text-center justify-center items-center absolute">{item.id}</span>
-
                             <img
                                 src={`/img/products/products-${item.img}.webp`}
                                 alt={`Product ${item.title}`}
@@ -56,16 +52,18 @@ const ProductPagination = ({ products }) => {
                             />
                         </div>
                         <div className="flex justify-center items-center mt-2">
-                           { item.stock ?
-                           <a
-                                className="bg-yellow-300 w-32 h-10 rounded-lg flex justify-center items-center gap-2"
-                                href={`https://wa.me/5491124613382?text=Hola%20quiero%20comprar%20el%20producto%20${item.id}%20🛒`}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <img src="/img/wsp-logo.webp" alt="logo message." class="w-5" />
-                                <p className="text-xs">Comprar</p>
-                                </a> : <a className="bg-red-500 w-32 h-10 rounded-lg flex justify-center items-center gap-2">Sin stock</a>}
+                            {item.stock ?
+                                <a
+                                    className="bg-yellow-300 w-32 h-10 rounded-lg flex justify-center items-center gap-2"
+                                    href={`https://wa.me/5491124613382?text=Hola%20quiero%20comprar%20el%20producto%20${item.id}%20🛒`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <img src="/img/wsp-logo.webp" alt="logo message." class="w-5" />
+                                    <p className="text-xs">Comprar</p>
+                                </a> :
+                                <a className="bg-red-500 w-32 h-10 rounded-lg flex justify-center items-center gap-2">Sin stock</a>
+                            }
                         </div>
                     </div>
                 ))}

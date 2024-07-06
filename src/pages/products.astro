@@ -1,17 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import products from "../db/products.json";
-import ProductPagination from "../components/ProductPagination";
+import ProductsPage from "../components/ProductsPage";
 ---
 
 <Layout
     title="Mis productos | ATETA"
     description="En esta sección encontrarás todos los productos que se agreguen incluso los nuevos que se agregan durante la semana"
 >
-    <main class="flex justify-center items-center mb-20 mt-10">
-        <div class="flex flex-col justify-center items-center">
-            <h2 class="text-[#BCA2F2] text-2xl">Mis productos</h2>
-            <ProductPagination client:load products={products} />
-        </div>
+    <main>
+        <ProductsPage client:load />
     </main>
 </Layout>
