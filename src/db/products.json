@@ -217,12 +217,12 @@
     },
     {
         "id": 25,
-        "title": "",
-        "subtitle": "",
+        "title": "AVON",
+        "subtitle": "Desodorante aerosol",
         "img": 25,
-        "price": 14000,
+        "price": 3200,
         "star": 5,
-        "stock":false
+        "stock":true
     },
     {
         "id": 26,
@@ -235,17 +235,17 @@
     },
     {
         "id": 27,
-        "title": "",
-        "subtitle": "",
+        "title": "AVON",
+        "subtitle": "Desodorante aerosol",
         "img": 27,
-        "price": 14000,
+        "price": 3200,
         "star": 5,
-        "stock":false
+        "stock":true
     },
     {
         "id": 28,
         "title": "AVON",
-        "subtitle": "Fragancia",
+        "subtitle": "Perfume",
         "img": 28,
         "price": 16000,
         "star": 5,
@@ -277,6 +277,284 @@
         "price": 14000,
         "star": 5,
         "stock":true
+    },
+    {
+        "id":32 ,
+        "title": "GIGOT",
+        "subtitle": "Desodorante aerosol",
+        "img": 32,
+        "price":2000 ,
+        "star": 5,
+        "stock": true
+    },
+    {
+        "id":33 ,
+        "title": "AVON",
+        "subtitle": "",
+        "img": 33,
+        "price": 2500,
+        "star": 5,
+        "stock": true
+    },
+    {
+        "id":34 ,
+        "title": "AVON",
+        "subtitle": "Desodorante aerosol",
+        "img": 34,
+        "price": 2500,
+        "star": 5,
+        "stock": true
+    },
+    {
+        "id":35 ,
+        "title": "AVON",
+        "subtitle": "Desodorante aerosol",
+        "img": 35,
+        "price":2500 ,
+        "star": 5,
+        "stock": true
+    },
+    {
+        "id":36 ,
+        "title": "AVON",
+        "subtitle": "Desodorante aerosol",
+        "img": 36,
+        "price": 2500,
+        "star": 5,
+        "stock": true
+    },
+    {
+        "id": 37,
+        "title": "AMODIL",
+        "subtitle": "Desodorante aerosol",
+        "img": 37,
+        "price":3500 ,
+        "star": 5,
+        "stock": true
+    },
+    {
+        "id": 38,
+        "title": "AVON",
+        "subtitle": "Perfume",
+        "img": 38,
+        "price": 16000,
+        "star": 5,
+        "stock": true
+    },
+    {
+        "id":39 ,
+        "title": "GIGOT",
+        "subtitle": "Perfume",
+        "img": 39,
+        "price": 10000,
+        "star": 5,
+        "stock": true
+    },
+    {
+        "id":40 ,
+        "title": "AMODIL",
+        "subtitle": "Perfume",
+        "img": 40,
+        "price": 8000,
+        "star": 5,
+        "stock": true
+    },
+    {
+        "id": 41,
+        "title": "VIOLETTA",
+        "subtitle": "Agua micelar",
+        "img": 41,
+        "price": 5000,
+        "star": 5,
+        "stock": true
+    },
+    {
+        "id":42 ,
+        "title": "AMODIL",
+        "subtitle": "Champu",
+        "img": 42,
+        "price": 3000,
+        "star": 5,
+        "stock": true
+    },
+    {
+        "id": 43,
+        "title": "AMODIL",
+        "subtitle": "Champu",
+        "img": 43,
+        "price":3000 ,
+        "star": 5,
+        "stock": true
+    },
+    {
+        "id":44 ,
+        "title": "AMODIL",
+        "subtitle": "Crema en GEL",
+        "img": 44,
+        "price": 3000,
+        "star": 5,
+        "stock": true
+    },
+    {
+        "id":45 ,
+        "title": "VIOLETTA",
+        "subtitle": "Agua micelar",
+        "img": 45,
+        "price":4000 ,
+        "star": 5,
+        "stock": true
+    },
+    {
+        "id":46 ,
+        "title": "AVON",
+        "subtitle": "Embulsion",
+        "img": 46,
+        "price":3500 ,
+        "star": 5,
+        "stock": true
+    },
+    {
+        "id": 47,
+        "title": "VIOLETTA",
+        "subtitle": "Alcohol en GEL",
+        "img":47 ,
+        "price": 2500,
+        "star": 5,
+        "stock": true
+    },
+    {
+        "id": 48,
+        "title": "AMODIL",
+        "subtitle": "Fijador de cabello",
+        "img": 48,
+        "price": 3500,
+        "star": 5,
+        "stock": true
+    },
+    {
+        "id":49 ,
+        "title": "AMODIL",
+        "subtitle": "Alcohol en GEL",
+        "img": 49,
+        "price": 2500,
+        "star": 5,
+        "stock": true
+    },
+    {
+        "id": 50,
+        "title": "VIOLETTA",
+        "subtitle": "Clear Face",
+        "img": 50,
+        "price":3000 ,
+        "star": 5,
+        "stock": true
+    },
+    {
+        "id": 51,
+        "title": "AMODIL",
+        "subtitle": "Quita esmalte",
+        "img": 51,
+        "price":4000 ,
+        "star": 5,
+        "stock": true
+    },
+    {
+        "id": 52,
+        "title": "AMODIL",
+        "subtitle": "Repelente",
+        "img": 52,
+        "price": 2500,
+        "star": 5,
+        "stock": true
+    },
+    {
+        "id":53 ,
+        "title": "AVON",
+        "subtitle": "Crema facial",
+        "img": 53,
+        "price": 3500,
+        "star": 5,
+        "stock": true
+    },
+    {
+        "id":54 ,
+        "title": "AMODIL",
+        "subtitle": "Mascara capilar",
+        "img": 54,
+        "price": 3500,
+        "star": 5,
+        "stock": true
+    },
+    {
+        "id":55 ,
+        "title": "VIOLETTA",
+        "subtitle": "Crema para arrugas",
+        "img":55 ,
+        "price": 10000,
+        "star": 5,
+        "stock": true
+    },
+    {
+        "id": 56,
+        "title": "VIOLETTA",
+        "subtitle": "Crema con canabis",
+        "img":56 ,
+        "price": 4000,
+        "star": 5,
+        "stock": true
+    },
+    {
+        "id": 57,
+        "title": "AVON",
+        "subtitle": "Crema humectante respuesto",
+        "img": 57,
+        "price": 5000,
+        "star": 5,
+        "stock": true
+    },
+    {
+        "id":58 ,
+        "title": "VIOLETTA",
+        "subtitle": "Jabon liquido",
+        "img": 58,
+        "price": 3000,
+        "star": 5,
+        "stock": true
+    },
+    {
+        "id":59 ,
+        "title": "AMODIL",
+        "subtitle": "Crema para manos",
+        "img": 59,
+        "price": 3000,
+        "star": 5,
+        "stock": true
+    },
+    {
+        "id":60 ,
+        "title": "VIOLETTA",
+        "subtitle": "Locion para cabello",
+        "img": 60,
+        "price": 3000,
+        "star": 5,
+        "stock": true
+    },
+    {
+        "id": 61,
+        "title": "VIOLETTA",
+        "subtitle": "Alargador de uñas",
+        "img": 61,
+        "price": 3000,
+        "star": 5,
+        "stock": true
+    },
+    {
+        "id": 62,
+        "title": "VIOLETTA",
+        "subtitle": "Crema para cuerpo",
+        "img": 62,
+        "price": 4000,
+        "star": 5,
+        "stock": true
     }
-    
 ]
