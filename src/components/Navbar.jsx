@@ -47,7 +47,7 @@ export const Navbar = () => {
                 </div>
                 <div
                     id="menu"
-                    className="hidden md:flex md:justify-around md:items-center md:gap-20 lg:gap-36"
+                    className="hidden md:flex md:justify-around md:items-center md:gap-20 lg:gap-36 absolute mt-10 max-md:mt-[350px] z-50 max-md:bg-slate-400 max-md:w-52 max-md:h-52 max-md:items-center max-md:flex-col max-md:justify-center max-md:p-5 max-md:text-center max-md:rounded-lg max-md:text-white"
                 >
                     <div className="hidden md:flex md:justify-center md:items-center">
                         <svg
@@ -61,17 +61,17 @@ export const Navbar = () => {
                     </div>
                     <a
                         href="/"
-                        className="block md:inline-block text-center md:text-left py-2 md:py-0"
+                        className="block md:inline-block text-center md:text-left py-2 md:py-0 max-md:border-b max-md:hover:text-purple-400"
                     >Home</a
                     >
                     <a
                         href="/about"
-                        className="block md:inline-block text-center md:text-left py-2 md:py-0"
+                        className="block md:inline-block text-center md:text-left py-2 md:py-0 max-md:border-b max-md:hover:text-purple-400 "
                     >About</a
                     >
                     <a
                         href="/new"
-                        className="block md:inline-block text-center md:text-left py-2 md:py-0"
+                        className="block md:inline-block text-center md:text-left py-2 md:py-0 max-md:border-b max-md:hover:text-purple-400 "
                     >Nuevo</a
                     >
                     <a
