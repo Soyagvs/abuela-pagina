@@ -25,7 +25,7 @@ export const Navbar = () => {
     return (
         <header className="flex justify-center items-center ">
             <nav
-                className="flex flex-col justify-center items-center mt-16 "
+                className="flex flex-col justify-center items-center mt-3 "
             >
                 <p className="font-bold text-4xl md:hidden">ATETA</p>
                 <div className="md:hidden flex items-center">
